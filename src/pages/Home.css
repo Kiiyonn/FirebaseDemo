@@ -6,6 +6,10 @@
     margin-bottom: 20px;
   }
 
+  .editbtn {
+    position: relative;
+    float:right;
+  }
   
   .icon {
     position: relative;    
@@ -17,3 +21,5 @@
     width: 3%;
     height: 3%;
   }
+
+  

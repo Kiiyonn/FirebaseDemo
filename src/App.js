@@ -1,15 +1,17 @@
 import './App.css';
 //import Modal from './components/Modal';
 //import ReminderList from './components/ReminderList';
-import { BrowserRouter, Route, NavLink, Routes,Navigate , Link} from 'react-router-dom'
+import { BrowserRouter, Route, NavLink, Routes, Navigate , Link } from 'react-router-dom'
 
 import React, {useState} from 'react';
 
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
+import Login from './pages/Login'
 import Article from './pages/Article'
 import FormArticle from './pages/FormArticle'
+import EditArticle from './pages/EditArticle'; 
 
 function App() {
   // const articles = [
@@ -45,11 +47,14 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About /> }/>
           <Route path="/contact" element={<Contact /> }/>
           <Route path="/articles/:urlId" element={<Article/> }/>
           <Route path="/new" element={<FormArticle /> }/>
+          <Route path="/edit-article/:id" element={<EditArticle />}/>
           <Route path="/*" element={<Navigate to="/"/> }/>
         </Routes>
 

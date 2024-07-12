@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams, Link } from "react-router-dom"
 import {getDoc, doc} from 'firebase/firestore';
 import {db} from '../firebase/config'
 import { useEffect,useState } from 'react';
@@ -37,6 +37,7 @@ export default function Article() {
           <p>{article.description}</p>
         </div>
       )}
+      <Link to="/home">Back to Home</Link>
     </div>
   )
 }
