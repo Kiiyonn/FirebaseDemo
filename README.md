@@ -82,7 +82,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### the home page that has the added sign out and edit article feature
 ![after login](https://github.com/user-attachments/assets/44be8678-a5d9-4556-9a0f-50c1a260597f)
 
-### here's what the edit form looks like (when edit button is clicked)
+### here's what the edit form looks like (when edit button is clicked) 
 ### in every "update" button is click it will direct you back in login to check the authentication
 ![edit button](https://github.com/user-attachments/assets/1c4d5638-97d6-4e91-b45a-168bae36383a)
 
